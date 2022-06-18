@@ -1,3 +1,4 @@
+[index.js.zip](https://github.com/Peculiar-Michael/javascript-ta/files/8934495/index.js.zip)
 # Javascript Track Assessment
 
 ## Instructions
@@ -19,23 +20,43 @@ Please perform the following instructions.
 
 // complete the function
 function prime(num) {
-  // code goes here
+
+
+    if(num<2)
+
+        return "false"
+
+    
+
+    for(let i=2; i<num; i++){
+
+       if(num%i==0)
+
+     return "false"
+
+     }
+
+    return "true"
+
 }
 
-function solution(arg) {
-  return prime(arg);
-}
+
+
+
+
+
+
 ```
 
 ## Running
 
 ``` shell
 # run the solution
-$: npm start <input>
+console.log(prime(8));
 ```
 
 ## Testing
-``` shell
+``` false
 $: npm test
 ```
 
